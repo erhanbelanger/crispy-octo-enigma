@@ -1,0 +1,191 @@
+/* removing border/margins from page to work with the design more fluidly */
+:root
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(23, 19, 19);
+    opacity: 90%;
+}
+
+/* Needed to work with logo of the page to make it look niceer as its the first thing eyes go to on the page */
+.logo{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+    color: blue;
+}
+/* NavBar for specific sections of the page */
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+/* working with the unordered list for to change the display and remove list decoration */
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 15px 10px;
+}
+/* Need to specify the navbar list itself to make content specific */
+.navbar ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+/* had to specify the links themselves like previous */
+.navbar ul li a{
+    text-decoration: underline;
+    color: blue;
+    padding: 10px 25px;
+    transition: all .3s;
+    }
+/* Wanted hover effect for a satisfying user experience,keeps them engaged */
+.navbar ul li a:hover{
+    background-color: hotpink;
+    color: whitesmoke;
+    box-shadow: 0 0 8px hotpink;
+}
+/* the actual greeting to the page prior to information being displayed, a simple welcome */
+#greeting{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/neon-lights.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+/* main area for nav background image */
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    
+}
+/* main about me class */
+#about-me{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 35px;
+    
+}
+
+/* Section for about me */
+.about h2{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: blue;
+    border-bottom: 5px solid;
+    font-weight: bolder;
+    font-size: xx-large;
+    
+}
+/* changing color to bolder and designing so it pops on the screen easy for eyes to read */
+.about p{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: center;
+    color: hotpink;
+    font-weight: bold;  
+}
+/* Actual projects section */
+#work{
+   display: flex;
+   flex-direction: column;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: blue;
+    border-bottom: 5px solid;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 10px;
+}
+.projects img{
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+}
+/* Footer/Contact Center */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: blue;
+    border-bottom: 5px solid;
+    font-weight: bolder;
+    font-size: xx-large; 
+}
+
+.links{
+    display: flex;
+    list-style: none;
+    margin: 15px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+    margin: 15px 10px;
+}
+.links ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: blue;
+    padding: 10px 25px;
+    
+}
+
+
+
+
+
