@@ -1,17 +1,19 @@
-/* removing border/margins from page to work with the design more fluidly */
-:root
-
+/* this universal selector helps me set font family and padding/margin of the entire page */
 * {
     padding: 0;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
+/* setting the body background color so i do not have to play with the specific background in every section as i wanted it to be the same color all throughout */
 body{
     background-color: rgb(23, 19, 19);
     opacity: 90%;
 }
-
+/* setting the speed and smoothness of the way the links within the page work */
+html{
+    scroll-behavior: smooth;
+}
 /* Needed to work with logo of the page to make it look niceer as its the first thing eyes go to on the page */
 .logo{
     display: flex;
@@ -19,7 +21,7 @@ body{
     margin-top: 10px;
     font-weight: bold;
     font-size: xx-large;
-    color: blue;
+    color: whitesmoke;
 }
 /* NavBar for specific sections of the page */
 .navbar{
@@ -43,14 +45,14 @@ body{
 /* had to specify the links themselves like previous */
 .navbar ul li a{
     text-decoration: underline;
-    color: blue;
+    color: whitesmoke;
     padding: 10px 25px;
     transition: all .3s;
     }
 /* Wanted hover effect for a satisfying user experience,keeps them engaged */
 .navbar ul li a:hover{
     background-color: hotpink;
-    color: whitesmoke;
+    color:aqua;
     box-shadow: 0 0 8px hotpink;
 }
 /* the actual greeting to the page prior to information being displayed, a simple welcome */
@@ -94,7 +96,7 @@ body{
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    color: blue;
+    color: whitesmoke;
     border-bottom: 5px solid;
     font-weight: bolder;
     font-size: xx-large;
@@ -116,6 +118,7 @@ body{
    display: flex;
    flex-direction: column;
 }
+/*  singling out the text within the work section */
 .work{
     display: flex;
     flex-direction: column;
@@ -123,12 +126,12 @@ body{
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    color: blue;
+    color: whitesmoke;
     border-bottom: 5px solid;
     font-weight: bolder;
     font-size: xx-large;
 }
-
+/* allows me to edit the images to allign on the page the way i would like them to be */
 .projects{
     display: flex;
     flex-wrap: wrap;
@@ -137,19 +140,58 @@ body{
     align-items: center;
     padding: 10px;
 }
-.projects img{
+/* setting specific image heights/bacjrgound images */
+
+#pr1{
+    background-image: url(/images/neon-beach.jpeg);
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#pr2{
+    background-image: url(/images/neon-car.webp);
     width: 400px;
     height: 250px;
     margin: 10px;
+}
+#pr3{
+    background-image: url(/images/neon-office.jpeg);
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+}
+#pr4{
+    background-image: url(/images/neon-plants.jpeg);
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+}
+.projects h4{
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: x-large;
+    
+}
+
+/* setting hover to appear as buttons for future linked projects */
+.projects h4:hover{
+    background-color: hotpink;
+    color: whitesmoke;
+    box-shadow: 0 0 8px hotpink;
 }
 /* Footer/Contact Center */
 #contact{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-
 }
 
+/* alligning items and playing with text in order to make it look good */
 .contacts{
     display: flex;
     flex-direction: column;
@@ -157,12 +199,12 @@ body{
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    color: blue;
+    color: whitesmoke;
     border-bottom: 5px solid;
     font-weight: bolder;
     font-size: xx-large; 
 }
-
+/* the actual links for the future when i link the specific platforms to the page */
 .links{
     display: flex;
     list-style: none;
@@ -170,21 +212,36 @@ body{
     justify-content: center;
     align-items: center;
 }
+/* playing with the display of the links at the bottom of the page */
 .links ul{
     display: flex;
     list-style: none;
     margin: 15px 10px;
 }
+/* the actual decorations on the links at the bottom of the page */
 .links ul li{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     font-weight: bolder;
     text-decoration: underline;
-    color: blue;
+    color: whitesmoke;
     padding: 10px 25px;
     
 }
+/* added breakpoints to the file in order for multiple views and make them smooth all around */
+@media only screen and (max-width: 1240px){
+    /* laptops */
+}
 
+@media only screen and (max-width: 768px){
+    /*Tablets */
+}
+@media only screen and (max-width: 425px){
+	/*Big smartphones */
+}
+@media only screen and (max-width: 375px){
+	/*Small smartphones */
+}
 
 
 
