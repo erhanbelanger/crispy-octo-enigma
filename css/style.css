@@ -59,7 +59,7 @@ html{
 #greeting{
     display: flex;
     flex-direction: column;
-    background-image: url(/images/neon-lights.jpeg);
+    background-image: url(/crispy-octo-enigma/images/neon-lights.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@ html{
 /* setting specific image heights/bacjrgound images */
 
 #pr1{
-    background-image: url(/images/neon-beach.jpeg);
+    background-image: url(/crispy-octo-enigma/images/neon-beach.jpeg);
     width: 100%;
     height: 300px;
     margin: 10px;
@@ -165,19 +165,19 @@ html{
     background-repeat: no-repeat;
 }
 #pr2{
-    background-image: url(/images/neon-car.webp);
+    background-image: url(/crispy-octo-enigma/images/neon-car.webp);
     width: 400px;
     height: 250px;
     margin: 10px;
 }
 #pr3{
-    background-image: url(/images/neon-office.jpeg);
+    background-image: url(/crispy-octo-enigma/images/neon-office.jpeg);
     width: 400px;
     height: 250px;
     margin: 10px;
 }
 #pr4{
-    background-image: url(/images/neon-plants.jpeg);
+    background-image: url(/crispy-octo-enigma/images/neon-plants.jpeg);
     width: 400px;
     height: 250px;
     margin: 10px;
