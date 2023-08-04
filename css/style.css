@@ -83,9 +83,18 @@ html{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 15px;
-    margin-bottom: 35px;
     
+    
+}
+/* adding picture of me(will change later just do not have any solo pictures of me */
+#about-me img{
+    float: left;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 275px;
+    height: 400px;
+    margin: 75px;
+    border-radius: 10px;
 }
 
 /* Section for about me */
@@ -94,24 +103,29 @@ html{
     flex-direction: column;
     box-sizing: border-box;
     padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    align-items: center;
     color: whitesmoke;
     border-bottom: 5px solid;
     font-weight: bolder;
     font-size: xx-large;
     
 }
+
 /* changing color to bolder and designing so it pops on the screen easy for eyes to read */
 .about p{
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    padding: 10px;
-    font-family: 'Times New Roman', Times, serif; 
+    width: 50%;
     text-align: center;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding: 10px;
     color: hotpink;
-    font-weight: bold;  
+    font-weight: bold;
+    margin-left: 75px;
+    
+    
 }
 /* Actual projects section */
 #work{
